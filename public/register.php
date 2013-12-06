@@ -14,7 +14,7 @@ if(isset($_POST['submit']) === true) {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
     $email = $_POST['mail'];
-    $privatekey = "6Le32eoSAAAAAK5pZN-71wx-H9GZVHsPJml2oKy9";
+    $privatekey = "";
     $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
                                 $_POST["recaptcha_challenge_field"],
