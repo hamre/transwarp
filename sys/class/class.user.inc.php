@@ -250,7 +250,7 @@ class user extends DB_Connect {
      * Crypt user password for login and registration
      */
     public function crypt_password($password) {
-        $salt = '$6$jbQ x?+AzAfe(WLpe0N187lw*Pf[uK=PS572&QLX!,/dB?;Fi~.-dV&-`Ljct|Dn';
+        $salt = '';
         $password = crypt($password, $salt);
         
         return $password;
